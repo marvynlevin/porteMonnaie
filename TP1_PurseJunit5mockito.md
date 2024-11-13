@@ -8,7 +8,7 @@ Dans ce cours, nous allons explorer l'utilisation de **JUnit5** pour tester un p
 - **Mocking avec Mockito**
 - **Assertions et vérifications**
 
----
+
 
 ## 2. **Test Unitaire avec JUnit5**
 
@@ -119,7 +119,7 @@ public class CodeSecretUnitTest {
 
 Dans ce test, nous créons un objet `CodeSecret` et nous simulons le comportement du générateur de nombres aléatoires avec **Mockito** pour contrôler la génération du code secret.
 
----
+
 
 ## 3. **Mocking avec Mockito**
 
@@ -142,7 +142,7 @@ Vous pouvez aussi vérifier qu'une méthode a été appelée un certain nombre d
 Mockito.verify(random, Mockito.times(4)).nextInt(10);  // Vérifie que nextInt a été appelé 4 fois
 ```
 
----
+
 
 ## 4. **Utilisation des Mocks pour les Tests**
 
@@ -162,7 +162,7 @@ public void testDebitRejeteSurCodeFaux() throws Exception {
 
 Ici, nous simulons un débit dans le portefeuille avec un code incorrect, et nous attendons qu'une exception `CodeFauxException` soit lancée.
 
----
+
 
 ## 5. **Tests de comportements complexes avec Mockito**
 
@@ -180,7 +180,7 @@ public void testCodeBloqueApres3essaisFauxNonSuccessifs() {
 
 Dans cet exemple, nous simulons trois tentatives avec un mauvais code. Après trois tentatives infructueuses, le code doit être bloqué.
 
----
+
 
 ## 6. **Bonnes Pratiques**
 
@@ -188,7 +188,7 @@ Dans cet exemple, nous simulons trois tentatives avec un mauvais code. Après tr
 - **Utilisation des annotations JUnit5** : `@BeforeEach` pour l'initialisation avant chaque test, `@Test` pour les méthodes de test, et `@Disabled` pour ignorer certains tests.
 - **Assertions claires et explicites** : Utilisez des assertions pour tester des valeurs spécifiques, des exceptions attendues, et des comportements.
 
----
+
 
 ## 7. **Conclusion**
 
